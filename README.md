@@ -1,5 +1,12 @@
 # Credit Risk Machine Learning Framework
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.1-orange)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.8-blue)
+![XGBoost](https://img.shields.io/badge/XGBoost-3.2-green)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Tests](https://img.shields.io/badge/Tests-59%20passing-brightgreen)
+
 A credit risk ML framework built on real Lending Club data. The banking_ml package provides reusable preprocessing, evaluation, and modeling utilities — demonstrated across three notebooks covering default classification, risk-based pricing, and neural network scoring.
 
 ---
@@ -344,5 +351,38 @@ data/raw/Loan_status_2007-2020Q3.gzip
 Core dependencies: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `torch`, `matplotlib`, `seaborn`, `shap`, `joblib`
 
 See `requirements.txt` or `environment.yml` for the full pinned dependency list.
+
+---
+
+## Motivation
+
+Credit risk models at banks and fintechs rely heavily on proprietary risk grades — 
+internal scores that aren't available to outside lenders or researchers. This project 
+asks a simple question: how much of that signal is actually recoverable from raw 
+borrower data alone?
+
+Using Lending Club's public loan dataset, the goal was to reverse-engineer a credit 
+scoring model without access to their internal grading system — building from FICO 
+scores, debt ratios, and credit history the same way a lender would from a loan 
+application. The answer turned out to be: almost all of it. A model built purely 
+from borrower fundamentals matches one that uses Lending Club's proprietary grades 
+to within 0.001 AUC — the grades add almost nothing once you have the raw signals 
+they were built from.
+
+The project also reflects a broader personal goal — applying over a decade of 
+experience building production systems as a product manager to the craft of machine 
+learning. The emphasis on software engineering (reusable package, tested code, clean 
+abstractions) alongside the data science reflects that background: models don't exist 
+in isolation, and the infrastructure around them matters as much as the algorithm.
+
+---
+
+## Author
+
+**Bobby Nitto**
+
+[LinkedIn](linkedin.com/in/bobby-nitto) \| [GitHub](https://github.com/theen04/) \| [Email](mailto:rnitto1@gmail.com)
+
+*Built with curiosity, rigor, and a passion for data-driven insights in sports analytics.*
 
 ---
