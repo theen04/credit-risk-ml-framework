@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "banking_ml"
+version = "0.1.0"
+description = "Applied ML portfolio framework tailored to FinTech applications"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Bobby Nitto" }
+]
+urls = { "Homepage" = "https://github.com/theen04/fintech_ml_portfolio" }
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+dependencies = [
+    # Core data & analysis
+    "numpy>=2.4",
+    "pandas>=3.0",
+    "scipy>=1.17",
+
+    # ML
+    "scikit-learn>=1.8",
+    "xgboost>=3.2",
+    "shap>=0.50",
+    "joblib>=1.5",
+
+    # Visualization
+    "matplotlib>=3.10",
+    "seaborn>=0.13",
+
+    # Utilities
+    "tqdm>=4.67",
+    "PyYAML>=6.0",
+    "requests>=2.32",
+    "python-dateutil>=2.8",
+    "pillow>=12.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.1",
+    "notebook>=7.0",
+    "ipykernel>=6.0",
+    "ipywidgets>=8.1"
+]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+]
+neural = [
+    "torch>=2.10"
+]

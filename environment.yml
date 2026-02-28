@@ -1,0 +1,46 @@
+name: fintech-applied-ml
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Core data & analysis
+      - pandas>=3.0
+      - numpy>=2.4
+      - scipy>=1.17
+
+      # ML models
+      - scikit-learn>=1.8
+      - xgboost>=3.2
+      - torch>=2.10
+
+      # Explainability
+      - shap>=0.50
+
+      # Visualization
+      - matplotlib>=3.10
+      - seaborn>=0.13
+
+      # Jupyter & notebook support
+      - jupyter>=1.1
+      - notebook>=7.5
+      - ipykernel>=6
+      - ipywidgets>=8.1
+
+      # Utilities
+      - joblib>=1.5
+      - PyYAML>=6.0
+      - tqdm>=4.67
+      - requests>=2.32
+      - python-dateutil>=2.8
+      - pillow>=12.0
+
+      # Testing
+      - pytest
+      - pytest-cov
+      - pytest-xdist
+
+      # Editable install for your package
+      - -e ./src/fintech_ml
