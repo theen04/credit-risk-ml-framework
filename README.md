@@ -297,7 +297,7 @@ All analysis uses public loan-level data for educational purposes only.
 ## Setup
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/credit-risk-ml-framework.git
+git clone https://github.com/theen04/credit-risk-ml-framework.git
 cd credit-risk-ml-framework
 
 # Create environment
