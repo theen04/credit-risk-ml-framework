@@ -383,6 +383,4 @@ in isolation, and the infrastructure around them matters as much as the algorith
 
 [LinkedIn](linkedin.com/in/bobby-nitto) \| [GitHub](https://github.com/theen04/) \| [Email](mailto:rnitto1@gmail.com)
 
-*Built with curiosity, rigor, and a passion for data-driven insights in sports analytics.*
-
 ---
